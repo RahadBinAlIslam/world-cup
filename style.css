@@ -14,9 +14,9 @@ main{
 .container{
     background-color: black;
     border-radius: 25px;
-    width: 900px;
+    width: 1000px;
     padding: 20px 150px 20px 75px;
-    margin: 50px 150px 20px 150px;
+    margin: 40px 150px 20px 150px;
 }
 
 .intro-container{
@@ -50,4 +50,37 @@ main{
 
 .fa-angle-right{
     margin-left: 10px;
+}
+.reservoir{
+    background-color: black;
+}
+.aside-reservoir{
+    background-color: white;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    padding: 100px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin: 0%;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer h1{
+    margin-bottom: 75px;
+}
+
+.footer h4{
+    color: gray;
+}
+
+.footer-nav{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
 }
