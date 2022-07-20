@@ -84,6 +84,7 @@ main{
 .nav-switch{
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
+    font-size: 18px;
     width: 225px;
     height: 50px;
     margin-top: 25px;
@@ -92,7 +93,7 @@ main{
     background-color: white;
 }
 
-.collections{
+#blogs{
     width: 1000px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -100,21 +101,37 @@ main{
     margin: 100px;
 }
 
-.collection{
-    border-radius: 10px;
-    border: 1px solid rgb(190, 190, 190);
-    /* box-shadow: 5px 5px 25px rgb(199, 199, 199); */
+#upcoming-matches{
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3%;
+    margin: 100px;
 }
 
-.collection-banner img{
+.upcoming-match{
+    padding: 15px;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+.upcoming-match-banner{
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.upcoming-match img{
     width: 100%;
 }
 
-.collection-button{
+.upcoming-match-button{
     text-decoration: none;
 }
 
-.collection-switch{
+.upcoming-match-switch{
     font-family: 'Poppins', sans-serif;
     background-color: white;
     width: 75px;
@@ -127,21 +144,79 @@ main{
     cursor: grab;
 }
 
-.collection-detail{
+.upcoming-match-detail{
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1px;
+    align-items: center;
 }
 
-.collection-info{
+.upcoming-match-detail p{
+    color: rgb(72, 72, 72);
+}
+
+.upcoming-match-banner p{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.upcoming-match-info{
     display: flex;
     gap: 3px;
     align-items: center;
 }
 
-.collection-info p{
+.upcoming-match-info p{
     margin-left: 5px;
 }
 
-.collection-infos{
+.upcoming-match-infos{
+    display: flex;
+    gap: 25px;
+}
+
+.blog{
+    border-radius: 10px;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+.blog-banner img{
+    width: 100%;
+}
+
+.blog-button{
+    text-decoration: none;
+}
+
+.blog-switch{
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    width: 75px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+}
+
+.blog-detail{
+    padding: 15px;
+}
+
+.blog-info{
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+
+.blog-info p{
+    margin-left: 5px;
+}
+
+.blog-infos{
     display: flex;
     gap: 25px;
 }
@@ -193,5 +268,6 @@ footer{
 
 .footer-nav{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
