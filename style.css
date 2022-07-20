@@ -20,8 +20,7 @@ main{
 }
 
 .intro-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     align-items: center;
 }
 
@@ -52,7 +51,7 @@ main{
 }
 
 .intro-banner img{
-    margin: 10px 150px -27px 5px;
+    margin: 10px 150px -27px 35px;
     width: 125%;
 }
 
@@ -283,3 +282,18 @@ footer{
 .footer-links a{
     color: gray;
 } 
+
+@media screen and (max-width: 688px) {
+    .container{
+        width: 25%;
+    }
+    .intro-container{
+        flex-direction: column;
+    }
+    .article{
+        flex-direction: column;
+    }
+    .footer-nav{
+        flex-direction: column;
+    }
+}
