@@ -106,7 +106,6 @@ main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3%;
-    margin: 75px;
 }
 
 .upcoming-match{
@@ -147,7 +146,6 @@ main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3%;
-    margin: 75px;
 }
 
 .blog{
@@ -229,7 +227,7 @@ main{
 
 .article{
     display: flex;
-    align-items: baseline;
+    align-items: center;
 }
 
 /* --------------------------
@@ -280,20 +278,17 @@ footer{
 ------------------------- */
 
 @media only screen and (max-width: 688px) {
-    .container{
-        width: 1%;
-    }
-
     .intro-container{
         justify-content: center;
         flex-direction: column;
     }
-    .blogs{
-        grid-template-columns: repeat(1, 1fr);
+
+    .article{
+        flex-direction: column;
     }
 
-    footer{
-        width: 15%;
+    #blogs, #upcoming-matches{
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .footer-nav{
@@ -302,7 +297,6 @@ footer{
 
     .footer-links a{
         justify-content: center;
-        width: 0%;
     }
 }
 
@@ -315,11 +309,11 @@ footer{
         width: 75%;
     }
 
-    .blogs{
+    #blogs, #upcoming-matches{
         grid-template-columns: repeat(2, 1fr);
     }
 
     .view{
-        display: visible;
+        display: block;
     }
 }
