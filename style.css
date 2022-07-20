@@ -288,6 +288,7 @@ footer{
 
     .article{
         flex-direction: column;
+        margin-bottom: 250px;
     }
 
     #blogs, #upcoming-matches{
