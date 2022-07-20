@@ -271,3 +271,15 @@ footer{
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+.footer-links{
+    margin-top: 35px;
+    display: flex;
+    gap: 50px;
+    font-size: 25px;
+    justify-content: center;
+}
+
+.footer-links a{
+    color: gray;
+} 
