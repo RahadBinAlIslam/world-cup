@@ -5,6 +5,10 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+/* ---------------------------
+         Header Design
+   --------------------------- */
+
 main{
     display: flex;
     flex-direction: column;
@@ -14,14 +18,14 @@ main{
 .container{
     background-color: black;
     border-radius: 25px;
-    width: 1000px;
     padding: 20px 150px 20px 75px;
-    margin: 40px 150px 20px 150px;
+    margin: 80px 150px 125px 150px;
 }
 
 .intro-container{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .intro-detail{
@@ -29,12 +33,12 @@ main{
 }
 
 .intro-detail h1{
-    line-height: 15px;
-    font-size: 3em;
+    font-size: 50px;
+    font-weight: bolder;
 }
 
-.intro-button{
-    text-decoration: none;
+.intro-button:hover{
+    border: 1px solid gray;
 }
 
 .intro-switch{
@@ -44,27 +48,28 @@ main{
     height: 50px;
     color: white;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: grab;
+    cursor: pointer;
 }
 
 .intro-banner img{
-    margin: 10px 150px -27px 35px;
-    width: 125%;
+    margin: 10px 150px -27px 100px;
+    width: 100%;
 }
 
 .fa-angle-right{
-    margin-left: 10px;
+    margin-left: 5px;
 }
+
+/* -----------------------
+        Navbar Design
+   ----------------------- */
 
 .nav-list{
     display: flex;
     flex-direction: column;
     width: 250px;
     height: 250px;
-    margin: 0;
+    margin-left: 50px;
     padding: 0;
     list-style: none;
     align-items: center;
@@ -90,26 +95,21 @@ main{
     padding: 5px;
     border-radius: 10px;
     background-color: white;
+    cursor: pointer;
 }
 
-#blogs{
-    width: 1000px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3%;
-    margin: 100px;
-}
+/* -------------------------------
+    Upcoming Matches Page Design
+   ------------------------------- */
 
 #upcoming-matches{
-    width: 1000px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3%;
-    margin: 100px;
+    margin: 75px;
 }
 
 .upcoming-match{
-    padding: 15px;
     align-items: center;
     border-radius: 10px;
     border: 1px solid rgb(200, 200, 200);
@@ -122,29 +122,8 @@ main{
     align-items: center;
 }
 
-.upcoming-match img{
-    width: 100%;
-}
-
-.upcoming-match-button{
-    text-decoration: none;
-}
-
-.upcoming-match-switch{
-    font-family: 'Poppins', sans-serif;
-    background-color: white;
-    width: 75px;
-    height: 30px;
-    border: 1px solid gray;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: grab;
-}
-
 .upcoming-match-detail{
-    padding: 15px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     line-height: 1px;
@@ -157,22 +136,18 @@ main{
 
 .upcoming-match-banner p{
     font-size: 20px;
-    font-weight: 900;
+    font-weight: 800;
 }
 
-.upcoming-match-info{
-    display: flex;
-    gap: 3px;
-    align-items: center;
-}
+/* -----------------------
+     Blogs Page Design
+   ----------------------- */
 
-.upcoming-match-info p{
-    margin-left: 5px;
-}
-
-.upcoming-match-infos{
-    display: flex;
-    gap: 25px;
+#blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3%;
+    margin: 75px;
 }
 
 .blog{
@@ -198,7 +173,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: grab;
+    cursor: pointer;
 }
 
 .blog-detail{
@@ -217,11 +192,17 @@ main{
 
 .blog-infos{
     display: flex;
-    gap: 25px;
+    gap: 30px;
 }
 
-.fa-solid.filled{
-    color: orange;
+/* -------------------------
+    View All Button Design
+   ------------------------- */
+
+.view{
+    display: none;
+    margin-left: 575px;
+    margin-bottom: 20px;
 }
 
 .view-button{
@@ -239,14 +220,21 @@ main{
     align-items: center;
     justify-content: center;
     border: none;
-    cursor: grab;
-    display: none;
+    cursor: pointer;
 }
+
+/* -----------------------
+    Navbar & Stack Merge
+   ----------------------- */
 
 .article{
     display: flex;
     align-items: baseline;
 }
+
+/* --------------------------
+        Footer Design
+   -------------------------- */
 
 footer{
     padding: 75px;
@@ -274,7 +262,7 @@ footer{
 .footer-links{
     margin-top: 35px;
     display: flex;
-    gap: 50px;
+    gap: 40px;
     font-size: 25px;
     justify-content: center;
 }
@@ -283,17 +271,55 @@ footer{
     color: gray;
 } 
 
-@media screen and (max-width: 688px) {
+/* ----------------------
+       Responsiveness
+   ---------------------- */
+
+/* ----------------------
+        Mobile Device
+------------------------- */
+
+@media only screen and (max-width: 688px) {
     .container{
-        width: 25%;
+        width: 1%;
     }
+
     .intro-container{
+        justify-content: center;
         flex-direction: column;
     }
-    .article{
-        flex-direction: column;
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
     }
+
+    footer{
+        width: 15%;
+    }
+
     .footer-nav{
         flex-direction: column;
+    }
+
+    .footer-links a{
+        justify-content: center;
+        width: 0%;
+    }
+}
+
+/* ----------------------
+        Pad Device
+------------------------- */
+
+@media only screen and (min-width: 689px) and (max-width: 992px){
+    .container{
+        width: 75%;
+    }
+
+    .blogs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .view{
+        display: visible;
     }
 }
