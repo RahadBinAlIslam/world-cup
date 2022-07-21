@@ -61,7 +61,7 @@ body{
 }
 
 .intro-banner img{
-    margin: 10px 150px -27px 75px;
+    margin: 10px 10px -27px 75px;
     width: 100%;
 }
 
@@ -103,6 +103,21 @@ body{
     border-radius: 10px;
     background-color: white;
     cursor: pointer;
+}
+
+.nav-switch:hover{
+    background-color: red;
+    color: white;
+}
+
+.nav-switch:focus{
+    background-color: red;
+    color: white;
+}
+
+.nav-switch:active{
+    background-color: red;
+    color: white;
 }
 
 /* -------------------------------
@@ -334,8 +349,8 @@ footer{
     }
 
     .intro-banner img{
-        margin-bottom: -102px;
-        margin-left: -45px;
+        margin-bottom: -67px;
+        margin-left: -15px;
         width: 150%;
     }
 
